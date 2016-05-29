@@ -1,8 +1,8 @@
 ---
 title: npm小结
 date: 2016-05-29 02:11:32
-categories: 
-tags:
+categories: tools
+tags: npm
 
 ---
 

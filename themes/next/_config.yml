@@ -3,7 +3,7 @@
 # ---------------------------------------------------------------
 
 # Put your favicon.ico into `hexo-site/source/` directory.
-favicon: /favicon.ico
+favicon: /images/favicon.ico
 
 # Set default keywords (Use a comma to separate)
 keywords: "Hexo, NexT"
@@ -31,6 +31,8 @@ menu:
   archives: /archives
   tags: /tags
   #commonweal: /404.html
+  development: /development
+  resume: /resume/index.html
 
 
 # Enable/Disable menu icons.
@@ -47,6 +49,8 @@ menu_icons:
   tags: tags
   archives: archive
   commonweal: heartbeat
+  development: star
+  resume: thumbs-up
 
 
 

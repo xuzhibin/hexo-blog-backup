@@ -1,7 +1,8 @@
 ---
 title: Hexo安装记
 date: 2016-05-30 00:45:33
-tags:
+categories: tools
+tags: hexo
 ---
 
 # Hexo是啥
@@ -350,7 +351,7 @@ stylus:
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: github
-  repository: https://github.com/cnfeat/cnfeat.github.io.git
+  repository: https://github.com/xuzhibin/xuzhibin.github.io.git
   branch: master
 ```
 
