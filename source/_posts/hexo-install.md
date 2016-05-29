@@ -436,6 +436,86 @@ hexo s == hexo server
 hexo d == hexo deploy
 ```
 
+# Hexo备份
+
+已有人写了插件，[hexo-git-backup](https://github.com/coneycode/hexo-git-backup)，按步骤操作即可；
+
+
+``` bash
+$ npm install hexo-git-backup --save
+```
+
+
+修改站点配置文件 _config.yml.
+
+
+``` bash
+backup:
+    type: git
+    repository:
+       github: git@github.com:xxx/xxx.git,branchName
+       gitcafe: git@github.com:xxx/xxx.git,branchName
+```
+
+使用
+
+
+``` bash
+hexo backup
+```
+
+
+or
+
+
+``` bash
+hexo b
+```
+# Hexo部署在VPS
+
+
+``` bash
+$ npm install hexo-deployer-rsync --save
+```
+
+根据 [Hexo rsync 部署文档](https://hexo.io/zh-cn/docs/deployment.html#Rsync) 在 Hexo 中的 _config.yml 中添加 Deploy 的配置，以下是我在自己项目中的配置代码
+
+
+```
+deploy:
+  type: rsync
+  host: 你 VPS 的 IP 地址或者域名
+  user: root
+  root: 你想将 Hexo 生成的静态文件存放在 VPS 中的目录 例如: /www/hexo/blog/
+  port: 你 VPS 的 ssh 端口号
+  delete: true
+  verbose: true
+  ignore_errors: false
+```
+
+*必须先在 VPS 上创建好了想要存放 Hexo 静态文件的目录， rsync 不能创建不存在的目录
+
+我看网上有的朋友说光在 Hexo 中使用 rsync 不够，在 VPS 也需要下载 rsync 服务，但是我在阿里云上就没有下载 rsync 服务。如果你在 Hexo 中用 rsync 部署的时候一直报错，那就在 VPS 上下载 rsync 服务，看能否解决一直出错的原因，命令如下
+
+``` bash
+$ yum -y install rsync
+```
+
+如果rsync 报下面的错误
+
+
+``` bash
+rsync error: some files could not be transferred (code 23) at main.c(702)
+```
+
+
+解决方法: rsync的source有些文件没有读权限，所以报错。
+
+``` bash
+chmod +r  ./* -R
+```
+
+再次同步，即可OK.
 
 # 相关链接
 [如何搭建一个独立博客——简明Github Pages与Hexo教程](http://www.jianshu.com/p/05289a4bc8b2)

@@ -68,10 +68,23 @@ theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
+#deploy:
+#  type: git
+#  repo: git@github.com:xuzhibin/xuzhibin.github.io.git
+#  branch: master
+
+deploy: 
+- type: git
   repo: git@github.com:xuzhibin/xuzhibin.github.io.git
-  branch: master
+  branch: master	
+- type: rsync
+  host: qwolf.com
+  user: root
+  root: /home/wwwroot/xuzhibin.com/
+  port: 22
+  delete: true
+  verbose: true
+  ignore_errors: false
   
 backup:
   type: git
