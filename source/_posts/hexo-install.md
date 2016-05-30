@@ -25,11 +25,8 @@ brew install node
 
 ``` bash
 $ mkdir ~/.ssh #创建ssh命令
-
 $ cd ~/.ssh
-![](![http://](http://))
 $ ssh-keygen -t rsa -C "your_email@example.com" #注意更改Email地址
-
 $ pbcopy < ~/.ssh/id_rsa.pub
 ```
 
@@ -40,7 +37,7 @@ $ pbcopy < ~/.ssh/id_rsa.pub
 
 
 ``` bash
-$ git config --global user.name "yourusername
+$ git config --global user.name "yourusername"
 $ git config --global user.email "youremail"
 ```
 
