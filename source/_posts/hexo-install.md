@@ -12,7 +12,8 @@ tags: hexo
 首先翻看一遍 [Hexo 官方文档](https://hexo.io/zh-cn/)
 
 ## 环境准备
-安装 Node.js & Git
+{% textcolor danger %} 安装 Node.js & Git {% endtextcolor %}
+
 该命令执行后，自动装好node和npm。
 
 ``` bash
@@ -20,7 +21,7 @@ brew install node
 ```
 
 ## 配置 Git
-按照Github提示，创建SSH秘钥：
+按照{% label Github warinng %}提示，创建SSH秘钥：
 
 
 ``` bash
