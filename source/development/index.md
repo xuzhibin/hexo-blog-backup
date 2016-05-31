@@ -14,7 +14,7 @@ Electron + Materialize + Vue
 
 Cordova ＋ Crosswalk ＋ Framework7 + Frozen UI ＋ Vue
 
-# 常用图
+# 常 用 图
 
 [Linux常用命令](/uploads/files/linux-cmd.png)
 

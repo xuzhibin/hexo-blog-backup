@@ -89,9 +89,13 @@ theme: next
 #  branch: master
 
 deploy: 
+#- type: git
+#  repo: git@github.com:xuzhibin/xuzhibin.github.io.git
+#  branch: master  
 - type: git
-  repo: git@github.com:xuzhibin/xuzhibin.github.io.git
-  branch: master  
+  repo: 
+    repo: git@github.com:xuzhibin/xuzhibin.github.io.git,master
+    coding: git@git.coding.net:xuzhibin/xuzhibin.git,coding-pages  
 - type: rsync
   host: xuzhibin.com
   user: root
