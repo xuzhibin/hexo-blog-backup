@@ -97,7 +97,7 @@ deploy:
 #  branch: coding-pages 
 - type: git
   repo: 
-    github: git@git.coding.net:xuzhibin/xuzhibin.git,master
+    github: git@github.com:xuzhibin/xuzhibin.github.io.git,master
     coding: git@git.coding.net:xuzhibin/xuzhibin.git,coding-pages 
   
 - type: rsync
