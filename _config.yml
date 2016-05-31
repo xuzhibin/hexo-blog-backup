@@ -92,9 +92,14 @@ deploy:
 #- type: git
 #  repo: git@github.com:xuzhibin/xuzhibin.github.io.git
 #  branch: master  
+#- type: git
+#  repo: git@git.coding.net:xuzhibin/xuzhibin.git
+#  branch: coding-pages 
 - type: git
-  repo: git@git.coding.net:xuzhibin/xuzhibin.git
-  branch: coding-pages  
+  repo: 
+    github: git@git.coding.net:xuzhibin/xuzhibin.git,master
+    coding: git@git.coding.net:xuzhibin/xuzhibin.git,coding-pages 
+  
 - type: rsync
   host: xuzhibin.com
   user: root
