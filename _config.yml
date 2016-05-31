@@ -104,7 +104,8 @@ deploy:
 backup:
   type: git
   repository:
+#	gitcafe: git@git.coding.net:xuzhibin/xuzhibin.git,master
     github: git@github.com:xuzhibin/hexo-blog-backup.git,master
-	gitcafe: git@git.coding.net:xuzhibin/xuzhibin.git,master
+	
   
 duoshuo_shortname: xuzhibin
