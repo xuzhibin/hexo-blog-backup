@@ -105,6 +105,6 @@ backup:
   type: git
   repository:
     github: git@github.com:xuzhibin/hexo-blog-backup.git,master
-	coding: git@git.coding.net:xuzhibin/xuzhibin.git,master
+	gitcafe: git@git.coding.net:xuzhibin/xuzhibin.git,master
   
 duoshuo_shortname: xuzhibin
