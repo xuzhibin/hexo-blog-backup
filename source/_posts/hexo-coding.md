@@ -23,7 +23,7 @@ tags: hexo
 3. 开启项目的Pages服务。
 
 # Hexo配置
-在Coding，我们使用 coding-pages 分支发布Hexo，master 分支备份存储源文件。
+在Coding，我使用 coding-pages 分支发布Hexo，master 分支备份存储源文件。
 
 备份Hexo我是用的插件是 [hexo-git-backup](https://github.com/coneycode/hexo-git-backup)
 
@@ -67,7 +67,7 @@ Coding: [xuzhibin.coding.me](http://xuzhibin.coding.me)
 
 [Coding注册链接](https://coding.net/register?key=99951510-5c9f-4659-b088-43f34e0d2b0e)
 
-#其他
+# 其他
 1. 域名绑定,在Coding的Pages标签页，是有域名绑定功能的，我目前的Hexo是用rsync方式发布在阿里云，所以没有具体测试。
 
 2. Coding可以直接在仓库页打标签（Github没有这个功能），方便以后有需要时可以回滚。
