@@ -71,3 +71,5 @@ Coding: [xuzhibin.coding.me](http://xuzhibin.coding.me)
 1. 域名绑定,在Coding的Pages标签页，是有域名绑定功能的，我目前的Hexo是用rsync方式发布在阿里云，所以没有具体测试。
 
 2. Coding可以直接在仓库页打标签（Github没有这个功能），方便以后有需要时可以回滚。
+
+3. Coding的Pages服务有几分钟的更新延迟。
